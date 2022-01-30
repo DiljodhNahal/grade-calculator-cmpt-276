@@ -1,0 +1,25 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Diljodh's Grade Calculator",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "request": "^2.85.0",
+    "tape": "^4.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+
+  "author": "Diljodh Nahal",
+  "license": "MIT"
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator | Assignment #1</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/calculator.css" />
+
+        <!-- JavaScript -->
+        <script src="/js/calculator.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <div id="content">
+
+            <div id="content-title">
+                Grade Calculator
+            </div>
+
+            <div id="section">
+
+                <div id="section-title">
+                    <strong>Activities</strong>
+                </div>
+
+                <div id="section-body">
+
+                    <p>Give grades to the numeric activities:</p>
+
+                    <div id="tableContainer">
+                        <table id="activityTable">
+                            <thead id="activityTableHeader">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Short Name</th>
+                                    <th>Weight</th>
+                                    <th>Grade</th>
+                                    <th>Percent</th>
+                                </tr>
+                            </thead>
+                            <tbody id="activityTableBody">
+                                <tr id="activityTableBodyRow1" data-row="1">
+                                    <td>Activity 1</td>
+                                    <td>A1</td>
+                                    <td>
+                                        <input id="weight1" type="number" name="weight" min="1">
+                                    </td>
+                                    <td>
+                                        <input id="gradeOne1" type="number" name="gradeOne" min="1">
+                                        <strong>/</strong>
+                                        <input id="gradeTwo1" type="number" name="gradeTwo" min="1">
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button id="addActivityButton" onclick="addActivity();">
+                        <strong>ADD ACTIVITY</strong>
+                    </button>
+
+                    <div id="results">
+
+                        <div id="results-title">
+                            <strong>Result</strong>
+                        </div>
+
+                        <div id="results-body"></div>
+
+                    </div>
+
+                    <div id="calculation-buttons">
+
+                        <button id="weightedButton" onclick="calculateWeighted();">
+                            <strong>WEIGHTED</strong>
+                        </button>
+
+                        <button id="meanButton" onclick="calculateMean();">
+                            <strong>MEAN</strong>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
